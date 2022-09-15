@@ -1,4 +1,6 @@
 * {
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,11 +59,11 @@ button {
     font-size: 1rem;
 }
 
-button[value="Register"] {
+.btn--blue {
     background-color: rgb(84, 138, 197);
 }
 
-button[value="Sign In"] {
+.btn--green {
     background-color: rgb(116, 181, 102);
 }
 
@@ -76,4 +78,30 @@ h1 {
 
 .subtitle {
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-center {
+        width: 250px;
+    }
+
+    input {
+        height: 2rem;
+    }
+
+    input[type="checkbox"] {
+        width: 10px;
+    }
+
+    label strong {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.5rem;
+    }
 }
